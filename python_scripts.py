@@ -11,8 +11,7 @@ import pybel
 from pybel import ob
 
 
-# GPyOpt parallelize in the optimization step
-# Load moleculesa sequentially 
+# Load molecules sequentially 
 source = '/data/pegasus/lchan/GSOC/ESM/runall/4/'
 
 parameter_file = pd.read_table("/data/pegasus/lchan/GSOC/four_rotatable_bond.txt", delimiter=",", header=None)
@@ -34,8 +33,7 @@ def calculate_energy(torsion_angles):
         output.append(ff.Energy())
     return np.array(output).reshape([torsion_angles.shape[0],1])
 
-set_seed = [123]
-#set_seed = [321, 123, 234, 345, 456] 
+set_seed = [123, 234, 345, 456] 
 
 for paths, dirs, files in os.walk(source):
     if paths == source:
@@ -70,7 +68,7 @@ for paths, dirs, files in os.walk(source):
                 if number<=3:
                     max_iter = 45
                 elif np.logical_and(number>=4, number<8):
-                    max_iter = 15
+                    max_iter = 95
                 else:
                     max_iter = 245
 

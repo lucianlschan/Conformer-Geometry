@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "tfd.py", line 16, in <module>
+    tfd_ei_confab = TFP.GetTFDBetweenMolecules(ei[0], confab[0])
+  File "/data/pegasus/lchan/package/anaconda2/lib/python2.7/site-packages/rdkit/Chem/TorsionFingerprints.py", line 598, in GetTFDBetweenMolecules
+    if (Chem.MolToSmiles(mol1) != Chem.MolToSmiles(mol2)):
+Boost.Python.ArgumentError: Python argument types in
+    rdkit.Chem.rdmolfiles.MolToSmiles(NoneType)
+did not match C++ signature:
+    MolToSmiles(RDKit::ROMol mol, bool isomericSmiles=True, bool kekuleSmiles=False, int rootedAtAtom=-1, bool canonical=True, bool allBondsExplicit=False, bool allHsExplicit=False)
+

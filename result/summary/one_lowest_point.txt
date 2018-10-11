@@ -1,0 +1,7 @@
+Target,Lowest,Best
+astex_1hq2,LCB_bayes_345,Yes
+astex_1p2y,LCB_bayes_345,Yes
+omegapdb_1xge,EI_bayes_234,Yes
+astex_1xoz,LCB_bayes_234,Yes
+omegapdb_1yc5,EI_bayes_234,Yes
+astex_1hnn,LCB_bayes_123,Yes

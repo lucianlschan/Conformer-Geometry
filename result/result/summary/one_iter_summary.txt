@@ -1,0 +1,7 @@
+Early_Stop,Target
+No,astex_1hq2
+No,astex_1p2y
+No,omegapdb_1xge
+No,astex_1xoz
+No,omegapdb_1yc5
+No,astex_1hnn

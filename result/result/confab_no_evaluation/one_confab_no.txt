@@ -1,7 +1,0 @@
-Number,target
-12,astex_1hq2
-12,astex_1p2y
-12,omegapdb_1xge
-12,astex_1xoz
-6,omegapdb_1yc5
-8,astex_1hnn

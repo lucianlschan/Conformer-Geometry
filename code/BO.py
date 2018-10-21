@@ -12,9 +12,10 @@ from pybel import ob
 
 
 # Load molecules sequentially 
-source = '/data/pegasus/lchan/GSOC/ESM/runall/4/'
+source = '/path/to/data/'
 
-parameter_file = pd.read_table("/data/pegasus/lchan/GSOC/four_rotatable_bond.txt", delimiter=",", header=None)
+# Change parameter file for different set of molecules
+parameter_file = pd.read_table(os.dirname(os.getcwd()) + "/parameter_file/four_rotatable_bond.txt", delimiter=",", header=None)
 	
 ff = pybel._forcefields['mmff94']
 
